@@ -18,6 +18,6 @@
             <label for="salary">Salary</label>
             <input type="text" class="form-control" [(ngModel)]="model.salary" id="salary" name="salary">
         </div>
-        <button [disabled]="!userForm.form.valid" (click)="addUser()">Add Employee</button>
+        <button type="button" [disabled]="!userForm.form.valid" (click)="addUser()">Add Employee</button>
     </form>
 </div>
