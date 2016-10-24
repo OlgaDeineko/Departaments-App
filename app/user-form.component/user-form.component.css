@@ -1,0 +1,19 @@
+.container{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 14px;
+    text-align: left;
+    color: #3E4347;
+}
+
+.form-group{
+    display: inline-block;
+}
+
+.form-control:focus{
+    outline: none;
+    border: 1px solid khaki;
+}
+
+label{
+    display: block;
+}

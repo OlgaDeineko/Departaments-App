@@ -1,0 +1,17 @@
+.slogan{
+    width: 100%;
+    height: 5rem;
+    background-color: navy;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+h1{
+     font-size: 2rem;
+     color: white;
+     text-shadow: 0 0 7px rgba(0,0,0,0.1);
+     padding-left: 1rem;
+ }

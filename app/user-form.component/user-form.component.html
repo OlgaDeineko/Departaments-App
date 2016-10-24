@@ -1,0 +1,23 @@
+<div class="container">
+    <form *ngIf="active" (ngSubmit)="onSubmit()" #userForm="ngForm">
+        <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" class="form-control" [(ngModel)]="model.firstName" id="firstName" name="firstName" required>
+        </div>
+        <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" class="form-control" [(ngModel)]="model.lastName" id="lastName" name="lastName">
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="text" class="form-control" [(ngModel)]="model.phone" id="phone" name="phone">
+        </div>
+
+        <div class="form-group">
+            <label for="salary">Salary</label>
+            <input type="text" class="form-control" [(ngModel)]="model.salary" id="salary" name="salary">
+        </div>
+        <button [disabled]="!userForm.form.valid" (click)="addUser()">Add Employee</button>
+    </form>
+</div>

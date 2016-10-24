@@ -1,0 +1,19 @@
+<div class="department">
+    <h1 class="list">Departments list</h1>
+    <div>
+        <label>Department name:</label> <input (keyup.enter)="addDepartment(departmentName.value); departmentName.value=''" #departmentName />
+        <button (click)="addDepartment(departmentName.value); departmentName.value=''" (change)= "onDepartmentToggled();getDepartments()" >
+        Add
+        </button>
+    </div>
+<form></form>
+    <ul class="departments" >
+        <li *ngFor="let department of departments" [class.selected]="department === selectedDepartment"
+            (click)="onSelect(department);" (click)="gotoDetail(department)">
+            <!--<span class="badge">{{department.id}}</span>-->
+            <span>{{department.name}}</span>
+            <button class="delete"
+                    (click)="deleteDepartment(department); $event.stopPropagation()">x</button>
+        </li>
+    </ul>
+</div>
